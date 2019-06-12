@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tourney Machine - Tournament & League Management Software, Scheduling & Commuinication</title>
+    <meta name="description" content="Tourney Machine provides Tournament & League Management Software.  The software includes a state of the art scheduling engine and outstanding communication tools with coaches and parents, text/email messaging, mobile app, tournament web site.">
+    
+
+    <title>Tourney Machine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,300italic' rel='stylesheet'
+        type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/glyphicons.css" rel="stylesheet" media="screen">
+    <link href="css/sports.css" rel="stylesheet" media="screen">
+    <link href="css/gear-font.css" rel="stylesheet" media="screen">
+    <link href="css/public.css" rel="stylesheet" media="screen">
+
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-29582147-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+            '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TZLR4S3');
+</script>
+<!--End Google Tag Manager-->
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZLR4S3"
+            height="0" width="0" style="display: none; visibility: hidden">
+    </iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script src="//my.hellobar.com/adad7e6ccad15797d42f93514bed118c9ec9317f.js" type="text/javascript" charset="utf-8" async="async"></script>
+<div class="container">
+    
+<header class="row">
+    <nav class="navbar">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-left" href="Home.aspx">
+                    <img src="img/global/header/tm-logo-website.png" alt="Tourney Machine" width="298" height="76" /></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Features.aspx" class="btn btn-link">Features</a></li>
+                    <li><a href="#pricingModal" class="btn btn-link" data-toggle="modal" id="specialNavLink">Pricing</a></li>
+                    <li><a href="https://intercom.help/tourneymachine" class="btn btn-link" target="_blank">Support</a></li>
+                    <li><a href="GetStarted.aspx" class="btn btn-green">Get Started for Free</a></li>
+                    <li><a href="Login.aspx" class="btn btn-login">Login</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+<div id="pricingModal" class="modal fade">
+    <div class="modal-dialog modal-wide">
+        <div class="modal-content">
+            <div id="pricingModalContent" class="modal-body">
+                <div class="pricingTitle">
+                    Contact Us
+                </div>
+                <p>
+                    We serve tournaments, from large to small!<br />
+                    Contact us now for pricing for your tournament.
+                </p>
+                <div class="pricingPhone">
+                    (630) 446-0685
+                </div>
+                <p class="pricingText">
+                    OR
+                </p>
+                <div class="pricingPhone">
+                    <a href="mailto:pricing@tourneymachine.com">pricing@tourneymachine.com</a>
+                </div>
+                <!--				<form>
+					<input type="email" name="email" placeholder="Enter your email address" class="form-control input-lg" />
+					<butt on type="submit" name="submitButton" class="btn btn-lg btn-green" >CONTACT ME</button>
+				</form>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div data-ng-id="find-tournaments">
+        <div id="homeSearch" class="row panel" style="padding-left: 25px; padding-bottom: 15px;">
+            Loading Tournament Search Bar...
+        </div>
+    </div>
+
+    <div id="homeMain" class="row">
+        <div id="" class="col-xs-12 col-sm-5 col-md-4">
+            <h1>Schedule like a champion.</h1>
+            <p>
+                We get it. Scheduling is
+                <u>
+                    <em>hard</em>
+                </u>.
+            </p>
+            <p>
+                <span style="white-space: nowrap;">Tourney Machine, by SportsEngine,</span> is a faster and more intuitive way to schedule and run your tournaments and leagues.
+            </p>
+            <a href="GetStarted.aspx" class="btn btn-lg btn-green">Get Started</a>
+        </div>
+    </div>
+</div>
+<div class="footerWrapper">
+    <div id="homeBottom" class="container">
+        <div id="homeFeatures" class="row">
+            <div class="col-xs-12 col-sm-4 homeFeature">
+                <h2>Schedule Faster</h2>
+                <p>
+                    No more paper, no more spreadsheets.<br/>
+                    Save time and focus on what matters.
+                </p>
+                <p>
+                    <img src="img/home/spend-less-time.gif" width="300" height="128" alt="spend-less-time"
+                         class="img-responsive"/>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-4 homeFeature homeFeatureMiddle">
+                <h2>Made For Your Tournament/League</h2>
+                <p>
+                    Create any type of pool play, bracket and schedule with Schedule Assist&trade;
+                </p>
+                <img src="img/home/take-control.png" width="300" height="128" alt="take-control"
+                     class="img-responsive"/>
+            </div>
+            <div class="col-xs-12 col-sm-4 homeFeature">
+                <h2>Deliver Instant Results</h2>
+                <p>
+                    Keep coaches, parents and athletes in the loop on any device with a push of a button.
+                </p>
+                <img src="img/home/keep-everyone-informed.gif" width="300" height="128" alt="keep-everyone-informed"
+                     class="img-responsive"/>
+            </div>
+        </div>
+        <div class="row">
+            <div id="homeTestimonialCarousel" class="carousel slide" data-interval="8000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="col-xs-11 col-sm-8 homeQuote">
+                            <blockquote>
+                                "It took me less than one day to schedule the entire tournament from start to finish
+                                with 225 teams and 13 courts -- played at 9 different sites. This program is a slam dunk!"
+                            </blockquote>
+                            <p>
+                                <strong>Todd Jakopovic</strong> - Elkhorn Attack Youth Basketball, Elkhorn, NE
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 homeQuoteImage">
+                            <img src="img/home/testimonials/todd-jakopovic.jpg" width="227" height="243" alt="Todd Jakopovic"
+                                 class="img-responsive"/>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-11 col-sm-8 homeQuote">
+                            <blockquote>
+                                "Tourney Machine proved to be exactly what we were looking for. It allows us to
+                                make quick changes to our schedules when weather issues or site changes occur."
+                            </blockquote>
+                            <p>
+                                <strong>Jason Eslinger</strong> - Assistant Director, Iowa Girls High School Athletic
+                                Union
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 homeQuoteImage">
+                            <img src="img/home/testimonials/jason-eslinger.jpg" width="227" height="243" alt="Jason Eslinger"
+                                 class="img-responsive"/>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-11 col-sm-8 homeQuote">
+                            <blockquote>
+                                "We run over 100 tournaments a year so having a partner that provides powerful software
+                                and great support was huge for us. Tourney Machine was the clear choice."
+                            </blockquote>
+                            <p>
+                                <strong>Tom Davidson</strong> - President, Pastime Tournaments
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 homeQuoteImage">
+                            <img src="img/home/testimonials/tom-davidson.jpg" width="227" height="243" alt="Tom Davidson"
+                                 class="img-responsive"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="homeCustomers" class="col-xs-12">
+                <img src="img/home/customers/for-the-game-athletics.jpg" width="160" height="112"
+                     alt="for-the-game-athletics" class=""/>
+                <img src="img/home/customers/elkhorn-attack.jpg" width="177" height="112" alt="elkhorn-attack"
+                     class=""/>
+                <img src="img/home/customers/big-shots.jpg" width="250" height="112" alt="big-shots"
+                     class=""/>
+                <img src="img/home/customers/baller-moms.jpg" width="193" height="112" alt="baller-moms"
+                     class=""/>
+                <img src="img/home/customers/iowa-girls-high-school.jpg" width="132" height="112"
+                     alt="iowa-girls-high-school" class=""/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        
+
+
+<footer class="container">
+    <div class="row">
+	    <div class="col-xs-12 text-center">
+            <a href="../Home.aspx"><i class="gear gear-tourney_manager"></i></a>
+            <p class="copy">&copy; <script>document.write(new Date().getFullYear());</script> SportsEngine Inc.</p>
+            <p class="phone">Pricing? Need help getting started? <strong>Call (630) 446-0685.</strong></p>
+		    <p class="feature-list">
+                <a href="features.aspx">Features</a>
+                 • 
+                <a href="#pricingModal" data-toggle="modal">Pricing</a>
+                 • 
+                <a href="https://intercom.help/tourneymachine" target="_blank">Support</a>
+                 • 
+                <a href="https://www.sportsengine.com/solutions/legal/terms_of_use/" target="_blank">Terms of Service</a>
+                 • 
+                <a href="https://www.sportsengine.com/solutions/legal/privacy_policy/" target="_blank">Privacy Policy</a>
+		    </p>
+            <ul class="list-inline social">
+                <li>
+		            <a href="https://twitter.com/tourneymachine"><img src="img/global/footer/twitter.png" alt="twitter" width="25" height="25" /></a>
+                </li>
+                <li>
+		            <a href="https://www.facebook.com/tourneymachine"><img src="img/global/footer/facebook.png" alt="twitter" width="25" height="25" /></a>
+                </li>
+            </ul>
+	    </div>
+    </div>
+	
+</footer>
+
+    </div>
+</div>
+
+<!-- JavaScript plugins (requires jQuery) -->
+<script src="//code.jquery.com/jquery.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-2.0.0.min.js"><\/script>')</script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/vendor/bootstrap.min.js"></script>
+
+<!-- Optionally enable responsive features in IE8 -->
+<script src="js/vendor/respond.min.js"></script>
+<script type="text/javascript">
+    $('#homeTestimonialCarousel').carousel()
+</script>
+<img src="https://t.sportstechinfo.com/visitors/logo.php?domain=tourneymachine.com" width="1" height="1" />
+<script src="https://storage.googleapis.com/didna-files/didna-pixel-tm.js"></script>
+
+
+        <!-- Intercom Acquire script -->
+        <script>
+            window.intercomSettings = {
+                app_id: "7497d660668819dc85f0da390095f485d8e89f97"
+            };
+        </script>
+    <script>
+        (function () {
+            var w = window;
+            var ic = w.Intercom;
+            if (typeof ic === "function") {
+                ic('reattach_activator');
+                ic('update', intercomSettings);
+            } else {
+                var d = document;
+                var i = function () { i.c(arguments) };
+                i.q = [];
+                i.c = function (args) { i.q.push(args) };
+                w.Intercom = i;
+
+                function l() {
+                    var s = d.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'https://static.intercomcdn.com/intercom.v1.js';
+                    var x = d.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                }
+
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            };
+        })()
+    </script>
+
+
+<!-- Angular -->
+<script type="text/javascript" src="/NgViews/dist/runtime.js"></script>
+<script type="text/javascript" src="/NgViews/dist/es2015-polyfills.js" nomodule></script>
+<script type="text/javascript" src="/NgViews/dist/polyfills.js"></script>
+<script type="text/javascript" src="/NgViews/dist/styles.js"></script>
+<script type="text/javascript" src="/NgViews/dist/main.js"></script>
+
+</body>
+</html>
